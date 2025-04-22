@@ -1,8 +1,9 @@
 export default async function handler(req, res) {
   // CORS headers
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+res.setHeader("Access-Control-Allow-Origin", "https://maxsouv80.wixsite.com");
+res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+res.setHeader("Access-Control-Allow-Credentials", "true");
 
   // Gérer la pré-requête OPTIONS
   if (req.method === "OPTIONS") {
